@@ -1,147 +1,30 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<!-- 展示模板 -->
+<template>
+    <div id="app">
+      <img src="./assets/logo.png">
+      <hello></hello>
+    </div>
+  </template>
+   
+  <script>
+  // 导入组件
+  import Hello from './components/Hello'
+   
+  export default {
+    name: 'app',
+    components: {
+      Hello
+    }
+  }
+  </script>
+  <!-- 样式代码 -->
   <style>
-    *{
-      box-sizing: border-box;
-    }
-    body{
-      padding: 10px;
-      background: #f1f1f1;
-      border: 2px solid green;
-    }
-    /* 头部标题 */
-    .head{
-      padding:30px ;
-      text-align: center;
-      background-color: hotpink;
-    }
-    /* 导航 */
-    .topnavi{
-      overflow: hidden;
-      background-color: #333;
-    }
-    .topnavi a{
-      /* height: 100%; */
-      float: left;
-      /* margin: 10px; */
-      padding: 10px;
-      text-decoration: none;
-      color: white;
-    }
-    .topnavi a:hover{
-      background-color: #ddd;
-      color: black;
-    }
-    /* 左侧 */
-    .leftcol{
-      /* padding: ; */
-      margin-top: 30px;
-      float: left;
-      width: 75%;
-      /* background-color: white; */
-    }
-    .fakeimg{
-      width: 100%;
-      padding: 20px;
-      background-color: #aaa;
-    }
-    .card{
-      padding: 20px;
-      background-color: white;
-      margin-top: 10px;
-    }
-    /* 右侧 */
-    .rightcol{
-      width: 25%;
-      margin-top: 20px;
-      float: left;
-      padding: 15px;
-    }
-    /* 清除浮动 */
-    .row::after{
-      content: "";
-      clear: both;
-      display: table;
-    }
-    /* 底部 */
-    .footer{
-      margin-top: 30px;
-      background-color: blue;
-      text-align: center;
-      padding: 20px;
-      border: 2px solid red;
-    }
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
   </style>
-
-</head>
-
-<body>
-<div class="head">
-  <h1 style="font-size: 40px; color: red;">杨成龙牛逼!!</h1>
-  <p>拉动浏览器边框查看效果</p>
-</div>
-  <!-- 导航 -->
-<div class="topnavi">
-  <a href="#导航">导航</a>
-  <a href="#导航">导航</a>
-  <a href="#导航">导航</a>
-  <a href="#导航" style="float: right;">导航</a>
-</div>
-<!-- 左侧 -->
-<div class="row" style="border: 5px solid black;">
-  <div class="leftcol">
-    <div class="card">
-      <h1>文章标题</h1>
-      <p>2019年4月17日</p>
-      <div class="fakeimg" style="height: 200px;">
-        <img src="./html/img_navsprites.gif" alt="导航图" >
-      </div>
-      <p>一些文本...</p>
-        <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>  
-    </div>
-  
-  
-    <div class="card">
-      <h1>文章标题</h1>
-      <p>2019年4月17日</p>
-      <div class="fakeimg" style="height: 200px;">
-        <img src="./html/img_navsprites.gif" alt="导航图" >
-      </div>
-      <p>一些文本...</p>
-        <p>菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！菜鸟教程 - 学的不仅是技术，更是梦想！</p>  
-    </div>
-  </div>
-  <div class="rightcol" style="border: 1px solid black;">
-    <div class="card">
-      <h1>关于我</h1>
-      <div class="fakeimg">
-        <img src="./html/klematis.jpg" alt="花" style="height: 200px; width: 100%; height: auto;">
-      </div>
-    </div>
-    <div class="card">
-      <h1>热门文章</h1>
-      <div class="fakeimg"><p>图片</p></div>
-      <div class="fakeimg"><p>图片</p></div>
-      <div class="fakeimg"><p>图片</p></div>
-    </div>
-    <div class="card">
-      <h1>关注我 </h1>
-      <p>一些文本</p>
-    </div>
-    <div id="youce" class="card">
-      <h1>关注我 </h1>
-      <p>一些文本</p>
-    </div>
-  </div>
-</div>
-<!-- 右侧 -->
-
-<!-- 底部文本 -->
-<div class="footer" >
-  <h1>底部区域</h1>
-</div>
-</body>
-
-</html>Hello World
