@@ -1,0 +1,7 @@
+###php_module是配置PHP8的，而配置PHP7应该用php7_module
+
+即，正确的写法应该是：
+
+配置PHP7：LoadModule php7_module C:/PHP/php7apache2_4.dll
+
+配置PHP8：LoadModule php_module C:/PHP/php8apache2_4.dll
